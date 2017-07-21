@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+
+<mapper namespace="com.sunyard.itp.mapper.TransFlowMapper">
+	<insert id="addTransFlow" parameterType="com.sunyard.itp.entity.TransFlow">
+		insert into TBL_TRANS_FLW
+		(TRADE_NO,OUT_TRADE_NO,BUYER_LOGON_ID,TRADE_STATUS,TOTAL_AMOUNT,RECEIPT_AMOUNT,SEND_PAY_DATE,BUYER_USER_ID,TRANS_TYPE)
+		values
+		(#{tradeNo},#{outTradeNo},#{buyerLogonId},#{tradeStatus},#{totalAmount},#{receiptAmount},#{sendPayDate},#{buyerUserId},#{transType})
+	</insert>
+</mapper>
