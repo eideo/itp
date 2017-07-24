@@ -10,12 +10,7 @@
 </head>
 
 <body>
-<script type="text/javascript"> 
- var url ="http://www.baidu.com";
-location.href="weixin://wxpay/bizpayurl?pr=d8N0FPX";
- //location.href=url;
- </script>
-
-<a href="weixin://wxpay/bizpayurl?pr=d8N0FPX" title="跳转支付测试">跳转支付测试</a>
+	
+       <% response.sendRedirect("weixin://wxpay/bizpayurl?pr=3uOyW7T"); %>
 </body>
 </html>
